@@ -1,0 +1,12 @@
+# MoversLaredo.com - Laravel on Shared Hosting
+Options -Indexes
+RewriteEngine On
+
+# Handle Laravel Application In Sub-Directory
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Handle Laravel Public Directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^public/(.*)$ /public/index.php [L]
