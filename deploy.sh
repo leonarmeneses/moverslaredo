@@ -17,7 +17,7 @@ echo "� Conectando a Hostinger via SSH..."
 ssh -p $HOSTINGER_PORT $HOSTINGER_USER@$HOSTINGER_HOST << 'EOF'
     echo "📁 Navegando al directorio web..."
     cd /home/u797192992/domains/moverslaredo.com/public_html
-    
+
     echo "🔄 Verificando repositorio Git..."
     # Si es la primera vez, clonar el repositorio
     if [ ! -d ".git" ]; then
@@ -28,21 +28,21 @@ ssh -p $HOSTINGER_PORT $HOSTINGER_USER@$HOSTINGER_HOST << 'EOF'
         # Actualizar desde GitHub
         git pull origin main
     fi
-    
+
     echo "📦 Instalando dependencias de Composer..."
     composer2 install --no-dev --optimize-autoloader
-    
+
     echo "⚡ Optimizando Laravel para producción..."
     php artisan config:cache
     php artisan route:cache
     php artisan view:cache
-    
+
     echo "🔗 Creando enlace de storage..."
     php artisan storage:link
-    
+
     echo "🧹 Limpiando cache anterior..."
     php artisan cache:clear
-    
+
     echo "✅ ¡Despliegue completado exitosamente!"
     echo "🌐 Tu sitio está actualizado en: https://moverslaredo.com"
 EOF
