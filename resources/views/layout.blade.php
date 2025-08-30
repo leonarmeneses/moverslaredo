@@ -8,7 +8,7 @@
 
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Brand Colors CSS -->
     <link href="{{ asset('css/brand-colors.css') }}" rel="stylesheet">
 
@@ -255,24 +255,24 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
+
         .btn:hover {
             background: var(--accent-gold);
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
         }
-        
+
         .btn-secondary {
             background: transparent;
             border: 2px solid var(--white);
             color: var(--white);
         }
-        
+
         .btn-secondary:hover {
             background: var(--white);
             color: var(--primary-blue);
         }
-        
+
         /* ===== CARDS & CONTENT ===== */
         .card {
             background: var(--white);
@@ -322,14 +322,14 @@
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
-        
+
         .footer-section p, .footer-section a {
             color: #cbd5e1;
             text-decoration: none;
             margin-bottom: 0.5rem;
             display: block;
         }
-        
+
         .footer-section a:hover {
             color: var(--accent-gold);
         }        .footer-bottom {
