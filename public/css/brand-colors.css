@@ -1,0 +1,114 @@
+/* ===== MOVERS LAREDO BRAND COLOR PALETTE ===== */
+:root {
+    /* Primary Colors - Based on Movers Laredo Logo */
+    --primary-blue: #1e3a8a;        /* Deep blue from logo */
+    --secondary-blue: #3b82f6;      /* Bright blue */
+    --accent-orange: #f59e0b;       /* Orange/amber from logo */
+    --accent-gold: #fbbf24;         /* Gold accent */
+    --dark-navy: #1e293b;           /* Dark navy */
+    
+    /* Supporting Colors */
+    --light-blue: #dbeafe;          /* Light blue background */
+    --success-green: #10b981;       /* Success/available */
+    --warning-yellow: #f59e0b;      /* Warning states */
+    --danger-red: #ef4444;          /* Error states */
+    
+    /* Text Colors */
+    --text-dark: #1f2937;           /* Main text color */
+    --text-medium: #374151;         /* Secondary text */
+    --text-light: #6b7280;          /* Tertiary text */
+    --text-lighter: #9ca3af;        /* Disabled text */
+    
+    /* Background Colors */
+    --background-light: #f8fafc;    /* Light background */
+    --background-white: #ffffff;    /* Pure white */
+    --background-gray: #f1f5f9;     /* Light gray background */
+    --background-dark: #0f172a;     /* Dark background */
+    
+    /* Border Colors */
+    --border-light: #e2e8f0;        /* Light borders */
+    --border-medium: #cbd5e1;       /* Medium borders */
+    --border-dark: #475569;         /* Dark borders */
+    
+    /* Shadow Colors */
+    --shadow-light: rgba(30, 58, 138, 0.05);
+    --shadow-medium: rgba(30, 58, 138, 0.1);
+    --shadow-dark: rgba(30, 58, 138, 0.15);
+    --shadow-heavy: rgba(30, 58, 138, 0.25);
+    
+    /* Gradient Definitions */
+    --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+    --gradient-hero: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--accent-orange) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+    
+    /* Interactive States */
+    --hover-blue: #1d4ed8;
+    --hover-orange: #d97706;
+    --focus-ring: rgba(59, 130, 246, 0.5);
+}
+
+/* ===== SEMANTIC COLOR CLASSES ===== */
+.text-primary { color: var(--primary-blue); }
+.text-secondary { color: var(--secondary-blue); }
+.text-accent { color: var(--accent-orange); }
+.text-success { color: var(--success-green); }
+.text-warning { color: var(--warning-yellow); }
+.text-danger { color: var(--danger-red); }
+
+.bg-primary { background-color: var(--primary-blue); }
+.bg-secondary { background-color: var(--secondary-blue); }
+.bg-accent { background-color: var(--accent-orange); }
+.bg-light { background-color: var(--background-light); }
+
+.border-primary { border-color: var(--primary-blue); }
+.border-accent { border-color: var(--accent-orange); }
+.border-light { border-color: var(--border-light); }
+
+/* ===== BRAND SPECIFIC BUTTON STYLES ===== */
+.btn-brand-primary {
+    background: var(--accent-orange);
+    color: var(--background-white);
+    border: none;
+}
+
+.btn-brand-primary:hover {
+    background: var(--accent-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--shadow-medium);
+}
+
+.btn-brand-secondary {
+    background: var(--primary-blue);
+    color: var(--background-white);
+    border: none;
+}
+
+.btn-brand-secondary:hover {
+    background: var(--hover-blue);
+}
+
+/* ===== CARD STYLES WITH BRAND COLORS ===== */
+.card-brand {
+    background: var(--background-white);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 12px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.card-brand:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px var(--shadow-medium);
+    border-color: var(--accent-orange);
+}
+
+/* ===== RESPONSIVE DESIGN HELPERS ===== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-dark: #f8fafc;
+        --text-medium: #e2e8f0;
+        --text-light: #cbd5e1;
+        --background-light: #0f172a;
+        --background-white: #1e293b;
+        --border-light: #334155;
+    }
+}
