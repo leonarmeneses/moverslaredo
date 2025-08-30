@@ -11,11 +11,7 @@
                 <div class="flex-shrink-0 px-4 lg:px-6">
                     <a href="{{ route('dashboard') }}" class="flex items-center space-x-3 group">
                         <div class="relative">
-                            <div class="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
-                                <svg class="w-6 h-6 lg:w-7 lg:h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
+                            <img src="{{ asset('images/Movers_Laredo.png') }}" alt="Movers Laredo Logo" class="w-12 h-12 lg:w-16 lg:h-16 object-contain group-hover:scale-105 transition-all duration-300">
                             <div class="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-slate-900 animate-pulse"></div>
                         </div>
                         <div class="hidden sm:block">

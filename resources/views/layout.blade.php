@@ -53,8 +53,10 @@
             gap: 0.5rem;
         }
         
-        .logo i {
-            color: #3498db;
+        .logo img {
+            height: 70px;
+            width: auto;
+            /* Removed filter to show original logo colors */
         }
         
         .nav-menu {
@@ -114,6 +116,10 @@
             
             .logo {
                 font-size: 1.5rem;
+            }
+            
+            .logo img {
+                height: 60px;
             }
             
             .mobile-toggle {
@@ -429,8 +435,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="{{ route('home') }}" class="logo">
-                <i class="fas fa-truck"></i>
-                MoversLaredo.com
+                <img src="{{ asset('images/Movers_Laredo.png') }}" alt="Movers Laredo Logo">
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="{{ route('home') }}" class="nav-link"><i class="fas fa-home"></i> Home</a></li>

@@ -45,8 +45,8 @@
             <nav class="col-md-3 col-lg-2 d-md-block sidebar">
                 <div class="position-sticky pt-3">
                     <div class="text-center mb-4">
-                        <h4 class="text-white">MoversLaredo</h4>
-                        <small class="text-muted">Admin Panel</small>
+                        <img src="{{ asset('images/Movers_Laredo.png') }}" alt="Movers Laredo Logo" class="mb-3" style="height: 80px; width: auto;">
+                        <small class="text-muted d-block">Admin Panel</small>
                     </div>
 
                     <ul class="nav flex-column">
